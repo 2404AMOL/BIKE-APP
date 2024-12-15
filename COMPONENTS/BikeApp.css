@@ -1,0 +1,2017 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background: #edf1f4;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*! ================================================================= NAVBAR START ==========================================================  */
+#Navbar{
+    height: 100px;
+    width: 100%;
+    border: 1px solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    transition: 555ms linear;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid white; */
+    background-color: #000000;
+}
+#Navbar :active{
+    cursor: all-scroll;
+}
+#Img{
+    height: 70px;
+    width: 300px;
+    margin: 15px 0px 0px 24px;
+}
+#Img img{
+    margin: 0 auto;
+    width: 83%;
+}
+ nav{
+    height: 50px;
+    width: 80%;
+    margin: 20px 0px 0px 1px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+
+}
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 13px;
+    margin-left: 11px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+/*! ================================================================= NAVBAR ENDS ==========================================================  */
+/*! ================================================================= HOME STARTS ==========================================================  */
+
+#HomeSection{
+    height: 707px;
+    width: 100%;
+    background-image: url(../ASSETS/IMAGES/Home/Back2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Home-Container
+{
+    height: 100vh;
+    width: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    
+}
+#Home-Container1{
+    height: 200px;
+    width: 500px;
+    /* border: 1px solid; */
+    align-self: center;
+    margin-top: 250px;
+    margin-left: 90px;
+ 
+}
+#Home-Container1 #text1{
+    color: #ffffff;
+    font-family:'vidaloka';
+    font-size: 40px;
+    height: 50px;
+    text-align: start; 
+}
+#Home-Container1 #text2{
+    color: #ffffff;
+    font-family:'muli';
+    font-size: 35px;
+    height: 50px;
+    text-align: start;
+    margin-top: 15px;
+}
+#Home-Btn{
+    height: 40px;
+    width: 150px;
+    font-family: 'Muli';
+    font-size: 17px;
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 1);
+    border: rgba(193, 16, 12, 1);
+    background-color: #C1100c;
+}
+
+
+/*! ================================================================= HOME ENDS ==========================================================  */
+
+/*! ================================================================= PRODUCTS START ==========================================================  */
+#ProductSection{
+    height: 735px;
+    width: 100%;
+    /* border: 1px solid; */
+}
+#ProductContainer{
+    height: 700px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: url(./../ASSETS/IMAGES/Products/BMW/BMW1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding: 20px 10%;
+    transition: background-image 0.3s;
+}
+#ProductContainer nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#ProductContainer nav #ProductLogo{
+    width: 160px;
+    cursor: pointer;
+}
+#ProductContainer nav #ProductBtn{
+    text-decoration: none;
+    color: #fff;
+    background: #C1100c;
+    padding: 15px 50px;
+    border-radius: 30px;
+}
+#ProductContent{
+    margin-top: 10px;
+}
+
+#ProductContent h1{
+    font-size: 100px;
+    color: #222;
+    margin-top: 0px;
+}
+#ProductContent h2{
+    color: red;
+    font-size: 34px;
+    margin-top: 11px;
+}
+#ProductContent h3{
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+}
+#ProductContent p{
+    max-width: 380px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #555;
+    margin: 5px;
+}
+.Color-Select{
+    display: flex;
+    margin-top: 30px;
+}
+
+.Color-Select div{
+    background: #333;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 2s linear infinite;
+    
+}
+.Color-Select div:active{
+    transform: scale(0.80);
+}
+.Color-Select #Red{
+    background: red;
+}
+.Color-Select #Blue{
+    background: blue;
+}
+.Color-Select #Black{
+   background: black;
+}
+/*! ================================================================= PRODUCTS ENDS ==========================================================  */
+/*! ================================================================= BIKE START ==========================================================  */
+#BikeSection{
+    height: 500px;
+    width: 100%;
+}
+#BikeSection h1{
+    text-align: center;
+    font-size: 36px;
+    font-family:'Vidaloka';
+    font-weight: 600;
+    margin-top: 24px;
+}
+#BikeContainer{
+    width: 94%;
+    height: 424px;
+    margin: 24px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+#BikeContainer .Bikes{
+    height: 383px;
+    width: 300px;
+    /* background: rgb(251, 250, 250); */
+    /* border: 1px solid; */
+    perspective: 100;
+    transition: 5s all linear;
+}
+#BikeContainer .Bikes .BikeImages{
+    width: 282px;
+    height: 280px;
+    /* border: 1px solid; */
+    margin: 11px auto;
+    transition: 4s all linear;
+    perspective: 100;
+
+}
+#BikeContainer .Bikes .BikeImages:hover{
+    transform: scale(1.55) rotateY(180deg);
+    transform-style: preserve-3d;
+    
+}
+#BikeContainer .Bikes #BikeImg1{
+    background-image: url(./../ASSETS/IMAGES/Bikes/Sports_Bike.png);
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotateY(180deg);
+    transition: 5s all linear;
+    perspective: 100;
+}
+
+#BikeContainer .Bikes #BikeImg1:hover{
+    transform: scale(1.55);
+    transform-style: preserve-3d;
+}
+
+#BikeContainer .Bikes #BikeImg2{
+    background-image: url(./../ASSETS/IMAGES/Bikes/Adventure\ Bike.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+#BikeContainer .Bikes #BikeImg3{
+    background-image: url(./../ASSETS/IMAGES/Bikes/Classic\ Bike.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotateY(180deg);
+    transition: 5s all linear;
+    perspective: 100;
+
+}
+#BikeContainer .Bikes #BikeImg3:hover{
+    transform: scale(1.55);
+    transform-style: preserve-3d;
+}
+#BikeContainer .Bikes #BikeImg4{
+    background-image: url(./../ASSETS/IMAGES/Bikes/Crusier\ Bike.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+#BikeContainer .Bikes .BikeText{
+    text-align: center;
+    font-size: 32px;
+    font-family:'Vidaloka';
+    font-weight: 600;
+    margin-top: 24px;
+}
+/*! ================================================================= BIKE ENDS ==========================================================  */
+/*! ================================================================= SCOOTERS STARTS ==========================================================  */
+#ScooterSection{
+    height: 500px;
+    width: 100%;
+}
+#ScooterSection h1{
+    text-align: center;
+    font-size: 36px;
+    font-family:'Vidaloka';
+    font-weight: 600;
+    margin-top: 24px;
+}
+#ScooterContainer{
+    width: 94%;
+    height: 424px;
+    margin: 24px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#ScooterContainer .Scooters{
+    height: 383px;
+    width: 300px;
+    /* background: rgb(251, 250, 250); */
+    /* border: 1px solid; */
+}
+#ScooterContainer .Scooters .ScooterImages{
+    width: 282px;
+    height: 280px;
+    /* border: 1px solid; */
+    margin: 11px auto;
+
+}
+#ScooterContainer .Scooters #ScooterImg1{
+    background-image: url(./../ASSETS/IMAGES/Scooters/Scooters.png);
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#ScooterContainer .Scooters #ScooterImg2{
+    background-image: url(./../ASSETS/IMAGES/Scooters/E-Scooter.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+#ScooterContainer .Scooters #ScooterImg3{
+    background-image: url(./../ASSETS/IMAGES/Scooters/Maxi\ Scooter.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+#ScooterContainer .Scooters #ScooterImg4{
+    background-image: url(./../ASSETS/IMAGES/Scooters/Moped.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+#ScooterContainer .Scooters .ScooterText{
+    text-align: center;
+    font-size: 32px;
+    font-family:'Vidaloka';
+    font-weight: 600;
+    margin-top: 24px;
+}
+/*! ================================================================= SCOOTERS ENDS ==========================================================  */
+/*! ================================================================= BRANDS STARTS ==========================================================  */
+#BrandSection{
+    height: 465px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#BrandSection h1{
+    text-align: center;
+    font-size: 36px;
+    font-family:'Vidaloka';
+    font-weight: 600;
+}
+#BrandContainer{
+    width: 94%;
+    height: 350px;
+    /* border: 1px solid; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Brands{
+    width: 250px;
+    height: 265px;
+    /* border: 1px solid; */
+}
+.BrandsImages{
+    height: 265px;
+    width: 250px;
+    /* border: 1px solid; */
+}
+#BrandImg1{
+    background-image: url(./../ASSETS/IMAGES/Brands/Hero.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#BrandImg2{
+    background-image: url(./../ASSETS/IMAGES/Brands/Honda.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#BrandImg3{
+    background-image: url(./../ASSETS/IMAGES/Brands/Yamaha.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#BrandImg4{
+    background-image: url(./../ASSETS/IMAGES/Brands/Royal_Enfield.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#BrandImg5{
+    background-image: url(./../ASSETS/IMAGES/Brands/Vespa.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*! ================================================================= BRANDS ENDS ==========================================================  */
+
+/*! ======================================================== RENT BY CATEGORIES STRATS =====================================================  */
+#RentByCategorySection{
+    height: 600px;
+    width: 100%;
+    /* border: 1px solid; */
+}
+#RentBikeContainer{
+    height: 565px;
+    width: 92%;
+    margin: 24px auto;
+}
+#RentBikeContainer h1{
+    text-align: center;
+    font-size: 36px;
+    font-family:'Vidaloka';
+    font-weight: 600;
+}
+#RentBikesMain{
+    margin-top: 30px;
+    height: 515px;
+    display: flex;
+}
+.RentBikes{
+    height: 424px;
+    width: 300px;
+    /* border: 1px solid; */
+    margin: 24px auto;
+}
+.RentBikes .imges{
+    height: 250px;
+    width: 265px;
+    position: relative;
+    z-index: -1;
+    /* border: 1px solid; */
+    margin: 20px auto;
+    border-radius: 20px;
+}
+#RentBike1 #img1{
+    background-image: url(../ASSETS/IMAGES/RentByCategory/Bike1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotateY(180deg);
+
+}
+
+#RentBike2 #img2{
+    background-image: url(../Assets/Images/RentByCategory/Bike2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotateY(180deg);
+
+}
+#RentBike3 #img3{
+    background-image: url(../Assets/Images/RentByCategory/Bike3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotateY(180deg);
+
+}
+#RentBike4 #img4{
+    background-image: url(../Assets/Images/RentByCategory/Bike4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotateY(180deg);
+
+}
+.RentBikeName{
+    font-family: 'Muli';
+    font-size: 20px;
+    text-align: center;
+    font-weight: 200;
+}
+.RentButton button{
+    font-family: 'Muli';
+    font-size: 16px;
+    height: 35px;
+    width: 135px;
+    margin: 10px 0px 0px 85px;
+    color: rgba(255, 255, 255, 1);
+    border: rgba(193, 16, 12, 1);
+    background-color: #C1100c;
+    border-radius: 20px;
+   
+}
+/*! ======================================================== RENT BY CATEGORIES ENDS ====================================================  */
+/*! =============================================================== WHY US START =======================================================  */
+#WhyUsSection{
+    height: 450px;
+    width: 100%;
+    /* border: 1px solid; */
+
+}
+#WhyUsSection h1{
+    font-family: 'Vidaloka';
+    font-size:35px;
+    text-align: center;
+    font-weight: 600;
+}
+#WhyUsContainer{
+    height: 350px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#WhyUsContainer1{
+    height: 335px;
+    width: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.WhyUsContent{
+    height: 170px;
+    width: 30%;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: #C1100c;
+}
+.WhyUsContent h1{
+    width: 90%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: #ffffff;
+    margin: 10px auto;
+    font-weight: lighter;
+}
+.WhyUsContent h2{
+    width: 80%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    margin: 10px auto;
+}
+/*! =============================================================== WHY US END =======================================================  */
+/*! =============================================================== ABOUT US START =======================================================  */
+#AboutSection{
+    height: 730px;
+    width: 100%;
+    /* border: 1px solid; */
+}
+#About-Container{
+    height: 700px;
+    width: 83%;
+    /* border: 1px solid; */
+    margin: 0 auto;
+}
+#About-Container h1{
+    font-family: 'Vidaloka';
+    font-size:35px;
+    text-align: center;
+    font-weight: 600;
+}
+#About-Img{
+    margin-top: 55px;
+    height: 500px;
+    /* width: 100%; */
+    /* border: 1px solid; */
+    background-image: url(../ASSETS/IMAGES/About/About.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 24px;
+}
+#AboutMain p{
+    height: 110px;
+    /* border: 1px solid; */
+    font-family: 'Muli';
+    font-size: 21px;
+    color: #242424;
+    text-align:center;
+    line-height: 1.35;
+    margin: 0 auto;
+}
+/*! =============================================================== ABOUT US END =======================================================  */
+/*! =============================================================== GALLERY START =======================================================  */
+#GallerySection{
+    height: 700px;
+    width: 100%;
+    /* border: 1px solid; */
+}
+#Gallery-Container{
+    height: 700px;
+    width: 90%;
+    margin: 20px auto;
+}
+#Gallery-Container h1{
+    font-family: 'Vidaloka';
+    font-size:35px;
+    text-align: center;
+    font-weight: 600;
+}
+#GalleryMain{
+    height: 600px;
+    /* border: 1px solid; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+#GalleryMain .imges{
+    height: 250px;
+    width: 30%;
+    border: 1px solid;
+    margin: 15px auto;
+    border-radius: 20px;
+    background-color: #000000;
+    perspective: 100;
+    transition: 2s all linear;
+    position: relative;
+    z-index: -1;
+}
+#GalleryMain #img1{
+    background-image: url(../ASSETS/IMAGES/Gallery/Bike1.png);
+    background-size: 74%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    transform: rotateY(180deg);
+
+}
+
+#GalleryMain #img2{
+    background-image: url(../ASSETS/IMAGES/Gallery/Bike2.png);
+    background-size: 74%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    transform: rotateY(180deg);
+
+}
+#GalleryMain #img3{
+    background-image: url(../ASSETS/IMAGES/Gallery/Bike3.png);
+    background-size: 74%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    transform: rotateY(180deg);
+
+}
+#GalleryMain #img4{
+    background-image: url(../ASSETS/IMAGES/Gallery/Bike4.png);
+    background-size: 74%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    transform: rotateY(180deg);
+
+}
+#GalleryMain #img5{
+    background-image: url(../ASSETS/IMAGES/Gallery/Bike5.png);
+    background-size: 74%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    transform: rotateY(180deg);
+
+}
+#GalleryMain #img6{
+    background-image: url(../ASSETS/IMAGES/Gallery/Bike6.png);
+    background-size: 74%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    transform: rotateY(180deg);
+
+}
+#GalleryMain .imges:hover
+{
+    margin: 0 auto;
+    transform-style: preserve-3d;
+}
+/*! =============================================================== GALLERY ENDS =======================================================  */
+/*! =============================================================== VIDEOS STARTS =======================================================  */
+#VideoSection{
+    height: 800px;
+    width: 100%;
+    /* border: 1px solid; */
+}
+
+#Video-Container{
+    height: 774px;
+    width: 90%;
+    margin: 0 auto;
+}
+#Video-Container h1{
+    font-family: 'Vidaloka';
+    font-size:35px;
+    text-align: center;
+    font-weight: 600;
+}
+#VideoMain{
+    margin-top: 40px;
+    height: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-wrap: wrap;
+}
+#VideoMain .Videos{
+    align-self: center;
+}
+#VideoMain .Videos iframe{
+    border-radius: 20px;
+    perspective: 111;
+    transition: 2s all linear;
+}
+#VideoMain .Videos iframe:hover{
+    transform: scale(1.35);
+    transform-style: preserve-3d;
+}
+/*! =============================================================== VIDEOS ENDS =======================================================  */
+/*! =============================================================== TESTIMONIALS START ======================================================= 750 */
+#TestimonialSection{
+    height: 750px;
+    width: 100%;
+    /* border: 1px solid; */
+}
+#TestimonialSection h1{
+    font-family: 'Vidaloka';
+    font-size:35px;
+    text-align: center;
+    font-weight: 600;
+    width: 74%;
+    margin: 0 auto;
+    /* border: 1px solid; */
+}
+#TestimonialMain{
+    height: 730px;
+    width: 90%;
+    margin: 0 auto;
+    background-image: url(./../ASSETS/IMAGES/Testimonials/Scooty1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+    margin: 24px auto;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#TestimonialContainer{
+    height: 550px;
+    width: 55%;
+    border: 1px solid cyan;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px 4px red;
+    display: flex;
+    position: relative;
+    z-index: 2;
+
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #5d5c5c00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  padding: 7px;
+  border: 0.24px solid #fff;
+  margin: 20px auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.swiper-slide p{
+    width: 74%;
+    margin: 20px auto;
+    padding: 15px;
+    color: #fff;
+    text-align: justify;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.swiper-slide h4{
+    padding: 11px;
+    color: white;
+    margin: 20px auto;
+}
+
+/*! =============================================================== TESTIMONIALS ENDS =======================================================  */
+/*! =============================================================== CONTACT US STARTS =======================================================  */
+#ContactSection{
+    height: 750px;
+    width: 100%;
+    /* border: 1px solid; */
+}
+
+#Contact-Container{
+    width: 90%;
+    height: 555px;
+    margin: 0 auto;
+}
+#Contact-Container h1{
+    font-family: 'Vidaloka';
+    font-size:35px;
+    text-align: center;
+    font-weight: 600;
+    width: 74%;
+    display: inline-block;
+    position: relative;
+    /* border: 1px solid; */
+    margin: 100px 0px 0px 155px;
+}
+
+#ContactMain{
+    width: 100%;
+    height: 350px;
+    /* border: 1px solid; */
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#ContactMain .Contacts{
+    height: 350px;
+    width: 29%;
+    /* border: 1px solid; */
+}
+
+#Contact1 #icon-1{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    font-size: 7rem;
+    text-align: center;
+    color: rgb(206, 0, 0);
+    margin: 25px 0px 0px 115px;
+}
+#Contact2 #icon-2{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    font-size: 5.65rem;
+    text-align: center;
+    color: rgb(206, 0, 0);
+    margin: 25px 0px 0px 115px;
+}
+
+#Contact3 #icon-3{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    font-size: 5.65rem;
+    text-align: center;
+    color: rgb(206, 0, 0);
+    margin: 25px 0px 0px 115px;
+}
+
+#Contact4 #icon-4{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    font-size: 5.65rem;
+    text-align: center;
+    color: rgb(206, 0, 0);
+    margin: 25px 0px 0px 115px;
+}
+
+
+.Contacts h2{
+    width: 90%;
+    font-family: 'Muli';
+    font-size: 24px;
+    color: #282828;
+    display: inline-block;
+    font-weight: normal;
+    text-align: center;
+    margin: 35px 0px 0px 15px;
+}
+.Contacts h3{
+    width: 90%;
+    font-family: 'Muli';
+    font-size: 19px;
+    color: #2A2A2A;
+    display: inline-block;
+    font-weight: normal;
+    text-align: center;
+    margin: 20px 0px 0px 15px;
+
+}
+
+/*! =============================================================== CONTACT US ENDS =======================================================  */
+/*! =============================================================== FOOTERS STARTS =======================================================  */
+#FooterSection{
+    height: 300px;
+    width: 100%;
+    display: flex;
+
+}
+#FooterContainer{
+    height: 255px;
+    width: 90%;
+    /* border: 1px solid; */
+    border-radius: 7px;
+    margin: 0 auto;
+    align-self: center;
+    box-shadow: -1px 2px 11px 15px #fff;
+}
+#DevContact{
+    height: 155px;
+    width: 450px;
+    /* border: 1px solid; */
+    margin: 0 auto;
+}
+#DevImg{
+    height: 83px;
+    width: 83px;
+    /* border: 1px solid; */
+    border-radius: 50%;
+    background-image: url(./../ASSETS/IMAGES/Footer/Amol2.png);
+    background-size: 94%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10px auto;
+}
+#SocialMedia{
+    width: 80%;
+    /* border: 1px solid; */
+    margin: 0 auto;
+
+}
+#SocialMedia a{
+    height: 55px;
+    width: 55px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #edf1f4;
+    margin: 0 auto;
+    margin-left: 10px;
+
+}
+#SocialMedia .fa{
+    font-size: 2.24rem;
+    padding: 10px;
+}
+#icon-1{
+    color: blue;
+}
+
+#icon-2{
+    color: red;
+}
+#icon-3{
+    color: blue;
+}
+#icon-4{
+    color: black;
+}
+#icon-5{
+    color: rgb(255, 0, 0);
+}
+#FooterContainer h1{
+   /* color: #fff; */
+   text-align: center;
+   margin-top: 10px;
+}
+#FooterContainer h2{
+    /* color: #fff; */
+    text-align: center;
+    font-size: 1.45rem;
+ }
+
+/*! =============================================================== FOOTER ENDS =======================================================  */
+/*! ============================================================== TOP UP BUTTON =======================================================  */
+#TopUp{
+    height: 85px;
+    width: 85px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 550px;
+    padding: 15px;
+    /* border: 1px solid; */
+    /* background-color: rgb(8, 8, 8); */
+    z-index: 10;
+    right: 70px;
+}
+#TopUp a{
+    position: absolute;
+    display: inline-block;
+    padding: 35px;
+    border-radius: 50%;
+    align-self: center;
+    background-image: url(../ASSETS/IMAGES/Home/TopUp_Button.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#TopUp a:hover{
+    box-shadow: -1px -1px 7px 7px #C1100c;
+}
+/*! ============================================================== TOP UP BUTTON =======================================================  */
+
+
+/*! =============================================================== RESPONSIVE STARTS =======================================================  */
+    /** ============================================================== MAX WIDTH(430px) =============================================  */
+    @media (max-width:430px){
+        #Navbar #Img{
+            position: relative;
+            left: 13%;
+        }
+        #Navbar nav{
+            display: none;
+        }
+       
+        #HomeSection{
+            width: 100%;
+            height: 700px;
+            background-position: 65%;
+            display: flex;
+            align-items: end;
+    
+        }
+        #Home-Container{
+            width: 100%;
+            height: 500px;
+    
+        }
+        #Home-Container1{
+            height: 200px;
+            margin: 0;
+            align-self: flex-end;
+        }
+        #TopUp{
+            top: 75%;
+            left: 70%;
+        }
+        #ProductSection{
+            height: 700px;
+            width: 100%;
+        }
+        #ProductContainer{
+            height: 500px;
+            width: 100%;
+            background-position: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+    
+        }
+        #ProductContainer nav{
+            position: relative;
+            top: -41%;
+        }
+    
+        #ProductContent{
+            height: 200px;
+            position: relative;
+            top: 30%;
+        }
+        #ProductContent h1,h2{
+            font-size: 20px;
+        }
+    
+        #BikeSection{
+            height: 1600px;
+            width: 100%;
+            margin-bottom: 11%;
+        }
+        #BikeContainer{
+            height: 1550px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #ScooterSection{
+            height: 1810px;
+            width: 100%;
+    
+        }
+    
+        #ScooterContainer{
+            height: 1700px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #BrandSection{
+            height: 1500px;
+    
+        }
+        #BrandContainer{
+            height: 1400px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #VideoSection{
+            height: 1300px;
+        }
+        #Video-Container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        #VideoMain .Videos{
+            width: 96%;
+        }
+        #VideoMain .Videos iframe{
+            width: 100%;
+            border-radius: 5px;
+    
+        }
+        
+        #VideoMain .Videos iframe:hover{
+            transform: scale(1);
+        }
+        #TestimonialSection{
+            height: 900px;
+            width: 100%;
+        }
+        #TestimonialMain{
+            background-position: 35%;
+        }
+        #TestimonialContainer{
+            width: 90%;
+        }
+        #FooterSection{
+            height: 400px;
+        }
+        #FooterContainer{
+            width: 100%;
+            display: inline-block;
+        }
+        #DevContact{
+            width: 98%;
+        }
+        #SocialMedia{
+            width: 90%;
+        }
+       #RentByCategorySection,#AboutSection,#GallerySection,#WhyUsSection,#ContactSection{
+            display: none;
+        }
+    }
+    /** ============================================================== MAX WIDTH(430px) =============================================  */
+
+    /** =============================================== Min Width(430px) and Max-width(700px)==========================================  */
+    @media (min-width:430px) and (max-width:700px){
+        #Navbar #Img{
+            position: relative;
+            left: 25%;
+        }
+        #Navbar nav{
+            display: none;
+        }
+        #HomeSection{
+            width: 100%;
+            height: 700px;
+            background-position: 70%;
+            display: flex;
+            align-items: end;
+    
+        }
+        #Home-Container{
+            width: 90%;
+            height: 500px;
+    
+        }
+        #Home-Container1{
+            height: 200px;
+            margin: 0;
+            align-self: flex-end;
+            position: relative;
+            left: 5%;
+        }
+        #TopUp{
+            top: 75%;
+            left: 74%;
+        }
+        #ProductSection{
+            height: 800px;
+            width: 100%;
+        }
+        #ProductContainer{
+            height: 550px;
+            width: 100%;
+            background-position: 82%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+    
+        }
+        #ProductContainer nav{
+            position: relative;
+            top: -41%;
+        }
+    
+        #ProductContent{
+            height: 200px;
+            position: relative;
+            top: 30%;
+        }
+        #ProductContent h1,h2{
+            font-size: 20px;
+        }
+        #AboutSection{
+            height: 850px;
+            width: 100%;
+        }
+        #About-Container{
+            width: 100%;
+        }
+        #About-Img{
+            border-radius: 5px;
+        }
+        #BikeSection{
+            height: 1000px;
+            width: 100%;
+        }
+        #BikeContainer{
+            height: 800px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+          
+        }
+        #BikeContainer .Bikes{
+            display: inline-block;
+            width: 47%;
+        }
+        #BikeContainer .Bikes .BikeImages{
+            width: 100%;
+        }
+        #ScooterSection{
+            height: 900px;
+            width: 100%;
+    
+        }
+        #ScooterContainer{
+            width: 100%;
+            height: 800px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+    
+        }
+        #ScooterContainer .Scooters{
+            display: inline-block;
+            width: 45%;
+        }
+        #ScooterContainer .Scooters .ScooterImages{
+            width: 100%;
+        }
+        #BrandSection{
+            height: 900px;
+
+    
+        }
+      
+        #BrandContainer{
+            height: 800px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        #BrandSection .Brands{
+            display: inline-block;
+            width: 35%;
+        }
+        #BrandSection .Brands .BrandsImages{
+            width: 100%;
+        }
+        #GallerySection{
+            width: 100%;
+        }
+        #Gallery-Container{
+            width: 100%;
+        }
+        #Gallery-Container h1{
+            margin: 0 auto;
+        }
+        #GalleryMain{
+            width: 100%;
+        }
+        #VideoSection{
+            height: 1300px;
+        }
+        #Video-Container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        #VideoMain .Videos{
+            width: 85%;
+        }
+        #VideoMain .Videos iframe{
+            width: 100%;
+            border-radius: 5px;
+    
+        }
+        
+        #VideoMain .Videos iframe:hover{
+            transform: scale(1);
+        }
+        #TestimonialSection{
+            height: 900px;
+            width: 100%;
+        }
+        #TestimonialMain{
+            background-position: 35%;
+        }
+        #TestimonialContainer{
+            width: 90%;
+        }
+        #FooterSection{
+            height: 400px;
+        }
+        #FooterContainer{
+            height: 300px;
+            width: 100%;
+            display: inline-block;
+        }
+        #DevContact{
+            width: 98%;
+        }
+        #SocialMedia{
+            width: 60%;
+            display: flex;
+        }
+        #RentByCategorySection,#WhyUsSection,#ContactSection{
+            display: none;
+        }
+
+    }
+    /** =============================================== Min Width(430px) and Max-width(700px)==========================================  */
+
+    /** =============================================== Min Width(700px) and Max-width(1000px)==========================================  */
+    @media (min-width:700px) and (max-width:1000px){
+        #Navbar #Img{
+            position: relative;
+            left: 31%;
+        }
+        #Navbar nav{
+            display: none;
+        }
+        #HomeSection{
+            width: 100%;
+            height: 700px;
+            background-position: 70%;
+            display: flex;
+            align-items: end;
+    
+        }
+        #Home-Container{
+            width: 100%;
+            height: 500px;
+    
+        }
+        #Home-Container1{
+            height: 200px;
+            margin: 0;
+            align-self: flex-end;
+            position: relative;
+            left: 5%;
+        }
+        #TopUp{
+            top: 75%;
+            left: 80%;
+        }
+        #ProductSection{
+            height: 850px;
+            width: 100%;
+        }
+        #ProductContainer{
+            height: 600px;
+            width: 100%;
+            background-position: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+    
+        }
+        #ProductContainer nav{
+            position: relative;
+            top: -41%;
+        }
+    
+        #ProductContent{
+            height: 200px;
+            position: relative;
+            top: 30%;
+        }
+        #ProductContent h1,h2{
+            font-size: 20px;
+        }
+        #AboutSection{
+            height: 900px;
+            width: 100%;
+        }
+        #BikeSection{
+            height: 1000px;
+            width: 100%;
+        }
+        #BikeContainer{
+            height: 800px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+          
+        }
+        #BikeContainer .Bikes{
+            display: inline-block;
+            width: 47%;
+        }
+        #BikeContainer .Bikes .BikeImages{
+            width: 100%;
+        }
+        #ScooterSection{
+            height: 900px;
+            width: 100%;
+    
+        }
+        #ScooterContainer{
+            width: 100%;
+            height: 800px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+    
+        }
+        #ScooterContainer .Scooters{
+            display: inline-block;
+            width: 45%;
+        }
+        #BrandSection{
+            height: 900px;
+
+    
+        }
+      
+        #BrandContainer{
+            height: 800px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        #BrandSection .Brands{
+            display: inline-block;
+            width: 35%;
+        }
+        #BrandSection .Brands .BrandsImages{
+            width: 100%;
+        }
+        #GallerySection{
+            width: 100%;
+        }
+        #Gallery-Container{
+            width: 100%;
+        }
+        #Gallery-Container h1{
+            margin: 0 auto;
+        }
+        #GalleryMain{
+            width: 100%;
+        }
+        #VideoSection{
+            height: 900px;
+        }
+        #Video-Container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        #VideoMain .Videos{
+            width: 47%;
+        }
+        #VideoMain .Videos iframe{
+            width: 100%;
+            border-radius: 5px;
+    
+        }
+        
+        #VideoMain .Videos iframe:hover{
+            transform: scale(1);
+        }
+        #TestimonialSection{
+            height: 900px;
+            width: 100%;
+        }
+        #TestimonialMain{
+            background-position: 55%;
+        }
+        #TestimonialContainer{
+            width: 90%;
+        }
+        #FooterSection{
+            height: 400px;
+        }
+        #FooterContainer{
+            height: 350px;
+            width: 100%;
+            display: inline-block;
+        }
+        #DevContact{
+            width: 98%;
+        }
+        #SocialMedia{
+            display: flex;
+            width: 50%;
+        }
+       
+        #RentByCategorySection{
+            height: 1111px;
+            width: 100%;
+        }
+        #RentBikeContainer{
+            height: 1000px;
+            width: 100%;
+        }
+        #RentBikesMain{
+            height: 950px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        #RentBikesMain #RentBikesMain .RentBikes {
+            display: inline-block;
+            width: 35%;
+        }
+        #WhyUsSection,#ContactSection{
+            display: none;
+        }
+
+    }
+    /** =============================================== Min Width(700px) and Max-width(1000px)==========================================  */
+
+     /** =============================================== Min Width(1000px) and Max-width(1200px)==========================================  */
+     @media (min-width:1000px) and (max-width:1200px){
+        #Navbar #Img{
+            position: relative;
+            left: 38%;
+        }
+        #Navbar nav{
+            display: none;
+        }
+        #HomeSection{
+            width: 100%;
+            height: 700px;
+            background-position: 70%;
+            display: flex;
+            align-items: end;
+    
+        }
+        #Home-Container{
+            width: 100%;
+            height: 500px;
+    
+        }
+        #Home-Container1{
+            height: 300px;
+            margin: 0;
+            align-self: flex-end;
+            position: relative;
+            left: 5%;
+        }
+        #TopUp{
+            top: 75%;
+            left: 80%;
+        }
+        #ProductSection{
+            height: 950px;
+            width: 100%;
+        }
+        #ProductContainer{
+            height: 700px;
+            width: 100%;
+            background-position: 95%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+    
+        }
+        #ProductContainer nav{
+            position: relative;
+            top: -41%;
+        }
+    
+        #ProductContent{
+            height: 200px;
+            position: relative;
+            top: 30%;
+        }
+        #ProductContent h1,h2{
+            font-size: 20px;
+        }
+        #AboutSection{
+            height: 900px;
+            width: 100%;
+        }
+        #BikeSection{
+            height: 1000px;
+            width: 100%;
+        }
+        #BikeContainer{
+            height: 800px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+          
+        }
+        #BikeContainer .Bikes{
+            display: inline-block;
+            width: 47%;
+        }
+
+        #ScooterSection{
+            height: 900px;
+            width: 100%;
+    
+        }
+        #ScooterContainer{
+            width: 100%;
+            height: 800px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+    
+        }
+        #ScooterContainer .Scooters{
+            display: inline-block;
+            width: 45%;
+        }
+        #BrandSection{
+            height: 900px;
+
+    
+        }
+      
+        #BrandContainer{
+            height: 800px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        #BrandSection .Brands{
+            display: inline-block;
+            width: 35%;
+        }
+        #BrandSection .Brands .BrandsImages{
+            width: 100%;
+        }
+        #GallerySection{
+            width: 100%;
+        }
+        #Gallery-Container{
+            width: 100%;
+        }
+        #Gallery-Container h1{
+            margin: 0 auto;
+        }
+        #GalleryMain{
+            width: 100%;
+        }
+        #VideoSection{
+            height: 900px;
+        }
+        #Video-Container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        #VideoMain .Videos{
+            width: 47%;
+        }
+        #VideoMain .Videos iframe{
+            width: 100%;
+            border-radius: 5px;
+    
+        }
+        
+        #VideoMain .Videos iframe:hover{
+            transform: scale(1);
+        }
+        #TestimonialSection{
+            height: 900px;
+            width: 100%;
+        }
+        #TestimonialMain{
+            background-position: 55%;
+        }
+        #TestimonialContainer{
+            width: 90%;
+        }
+        #FooterSection{
+            height: 400px;
+        }
+        #FooterContainer{
+            height: 350px;
+            width: 100%;
+            display: inline-block;
+        }
+        #DevContact{
+            width: 98%;
+        }
+        #SocialMedia{
+            display: flex;
+            width: 50%;
+        }
+       
+        #RentByCategorySection{
+            height: 1111px;
+            width: 100%;
+        }
+        #RentBikeContainer{
+            height: 1000px;
+            width: 100%;
+        }
+        #RentBikesMain{
+            height: 950px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        #RentBikesMain #RentBikesMain .RentBikes {
+            display: inline-block;
+            width: 35%;
+        }
+        #WhyUsSection,#ContactSection{
+            display: none;
+        }
+
+    }
+    /** =============================================== Min Width(1000px) and Max-width(1200px)==========================================  */
+         /** =============================================== Min Width(1000px) and Max-width(1500px)==========================================  */
+         @media (min-width:1200px) and (max-width:1500px){
+            #Navbar #Img{
+                width: 22%;
+            }
+            #Navbar nav{
+                width: 96%;
+            }
+            #Navbar nav ul li:nth-child(4){
+                display: none;
+            }
+            #HomeSection{
+                width: 100%;
+                height: 700px;
+                background-position: 70%;
+                display: flex;
+                align-items: end;
+        
+            }
+            #Home-Container{
+                width: 100%;
+                height: 500px;
+        
+            }
+            #Home-Container1{
+                height: 300px;
+                margin: 0;
+                align-self: flex-end;
+                position: relative;
+                left: 5%;
+            }
+            #TopUp{
+                top: 75%;
+                left: 80%;
+            }
+            #ProductSection{
+                height: 950px;
+                width: 100%;
+            }
+            #ProductContainer{
+                height: 700px;
+                width: 100%;
+                background-position: 95%;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+        
+            }
+            #ProductContainer nav{
+                position: relative;
+                top: -41%;
+            }
+        
+            #ProductContent{
+                height: 200px;
+                position: relative;
+                top: 30%;
+            }
+            #ProductContent h1,h2{
+                font-size: 20px;
+            }
+         
+            #BikeSection{
+                height: 700px;
+                width: 100%;
+            }
+            #BikeContainer{
+                height: 600px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+              
+            }
+            #BikeContainer .Bikes{
+                display: inline-block;
+                width: 24%;
+            }
+            
+            #ScooterSection{
+                height: 500px;
+                width: 100%;
+        
+            }
+            #ScooterContainer{
+                width: 100%;
+                height: 400px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+        
+            }
+            #ScooterContainer .Scooters{
+                display: inline-block;
+                width: 24%;
+            }
+            #BrandSection{
+                height: 400px;
+    
+        
+            }
+          
+            #BrandContainer{
+                height: 300px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+            #BrandSection .Brands{
+                display: inline-block;
+                width: 15%;
+            }
+            #BrandSection .Brands .BrandsImages{
+                width: 96%;
+            }
+            #RentByCategorySection{
+                height: 601px;
+                width: 100%;
+            }
+            #RentBikeContainer{
+                height: 500px;
+                width: 100%;
+            }
+            #RentBikesMain{
+                height: 950px;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            #RentBikesMain #RentBikesMain .RentBikes {
+                display: inline-block;
+                width:7%;
+            }
+            #AboutSection{
+                height: 900px;
+                width: 100%;
+            }
+            #AboutSection h1{
+                text-align: center;
+            }
+            #About-Container{
+                height: 900px;
+                width: 100%;
+            }
+            #AboutMain{
+                height: 900px;
+            }
+            #About-Img{
+                height: 700px;
+                border-radius: 7px;
+            }
+            #GallerySection{
+                width: 100%;
+            }
+            #Gallery-Container{
+                width: 100%;
+            }
+            #Gallery-Container h1{
+                margin: 0 auto;
+            }
+            #GalleryMain{
+                width: 100%;
+            }
+            #VideoSection{
+                height: 900px;
+            }
+            #Video-Container{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            #VideoMain .Videos{
+                width: 47%;
+            }
+            #VideoMain .Videos iframe{
+                width: 100%;
+                border-radius: 5px;
+        
+            }
+            
+            #VideoMain .Videos iframe:hover{
+                transform: scale(1);
+            }
+            #TestimonialSection{
+                height: 900px;
+                width: 100%;
+            }
+            #TestimonialMain{
+                background-position: 55%;
+            }
+            #TestimonialContainer{
+                width: 90%;
+            }
+            #FooterSection{
+                height: 400px;
+            }
+            #FooterContainer{
+                height: 350px;
+                width: 100%;
+                display: inline-block;
+            }
+            #DevContact{
+                width: 98%;
+            }
+            #SocialMedia{
+                display: flex;
+                width: 50%;
+            }
+           
+        }
+        /** =============================================== Min Width(1000px) and Max-width(1500px)==========================================  */
+    
+    /*! =============================================================== RESPONSIVE ENDS =======================================================  */
+
+
+
+
+
+
+
+

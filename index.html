@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./COMPONENTS/BikeApp.css" />
+    <!--! ==================================================  SWIPER CDN STARTS ======================================================== -->
+    <link rel="stylesheet" href="./COMPONENTS/swiper-bundle.min.css">
+    <!--! ==================================================  SWIPER CDN ENDS ========================================================== -->
+
+    <!--! ================================================  ANIMATION CDN STARTS ======================================================== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--! ===============================================  ANIMATION CDN ENDS ========================================================== -->
+     <!--! ===============================================  FONT AWESOME STARTS ========================================================== -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!--! ===============================================  FONT AWESOME ENDS ========================================================== -->
+
+    <link
+      rel="shortcut icon"
+      href="./ASSETS/IMAGES/RentByCategory/Bike2.png"
+      type="image/x-icon"
+    />
+    <title>Bike App</title>
+  </head>
+  <body>
+    <!--! ====================================================== MAIN START ===========================================================  -->
+    <main>
+      <!--! ===================================================== NAVBAR STARTS =====================================================  -->
+      <div class="animate__animated animate__flash" id="Navbar">
+        <div class="animate__animated animate__heartBeat" id="Img">
+          <img src="./ASSETS/IMAGES/Navbar/Riders-Bikes.png" alt="" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#HomeSection">HOME</a></li>
+            <li><a href="#BikeSection">BIKES</a></li>
+            <li><a href="#ScooterSection">SCOOTERS</a></li>
+            <li><a href="#RentByCategorySection">RENT BY CATEGORIES </a></li>
+            <li><a href="#WhyUsSection">WHY US</a></li>
+            <li><a href="#AboutSection">ABOUT US</a></li>
+            <li><a href="#GallerySection">GALLERY</a></li>
+            <li><a href="#VideoSection">VIDEOS</a></li>
+            <li><a href="#TestimonialSection">TESTIMONIALS</a></li>
+            <li><a href="#ContactSection">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!--! ========================================================= NAVBAR STARTS =====================================================  -->
+      <!--! ========================================================= HOME STARTS =====================================================  -->
+      <div id="HomeSection">
+        <div id="Home-Container">
+          <div data-aos="zoom-in" id="Home-Container1">
+            <h1 id="text1">Quality & Affordable</h1>
+            <div id="text2">Bike Shop & Rentals</div>
+            <button id="Home-Btn">Enquire Now</button>
+          </div>
+        </div>
+      </div>
+      <!--! ========================================================= HOME ENDS =====================================================  -->
+
+      <!--! ========================================================= PRODUCTS STARTS =====================================================  -->
+      <div data-aos="slide-up" id="ProductSection">
+        <div id="ProductContainer">
+          <nav>
+            <img
+              id="ProductLogo"
+              src="./ASSETS/IMAGES/Products/BMW/logo.png"
+              alt=""
+            />
+            <a href="" id="ProductBtn">Test Drive</a>
+          </nav>
+          <div
+            id="ProductContent"
+            data-aos="fade-right"
+            data-aos-duration="4000"
+          >
+            <h2>THE BMW</h2>
+            <h1>G 310 R</h1>
+            <p>
+              The Strength of the G 310 is in its lightness and agility. The
+              Bike not only delievers fun in the big-city timult, but also when
+              you are redefining the city limits when changing corners quickly.
+            </p>
+            <h3>Choose Your Color</h3>
+            <div class="Color-Select">
+              <div id="Red"></div>
+              <div id="Blue"></div>
+              <div id="Black"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--! ========================================================= PRODUCTS ENDS =====================================================  -->
+      <!--! ========================================================= BIKE STARTS =====================================================  -->
+      <div id="BikeSection">
+        <h1>Bikes</h1>
+        <div id="BikeContainer">
+          <div class="Bikes" id="Bike1" data-aos="fade-right">
+            <div class="BikeImages" id="BikeImg1"></div>
+            <h2 class="BikeText">Sports Bike</h2>
+          </div>
+          <div class="Bikes" id="Bike2" data-aos="fade-right">
+            <div class="BikeImages" id="BikeImg2"></div>
+            <h2 class="BikeText">Adventure Bike</h2>
+          </div>
+          <div class="Bikes" id="Bike3" data-aos="fade-left">
+            <div class="BikeImages" id="BikeImg3"></div>
+            <h2 class="BikeText">Classic Bike</h2>
+          </div>
+          <div class="Bikes" id="Bike4" data-aos="fade-left">
+            <div class="BikeImages" id="BikeImg4"></div>
+            <h2 class="BikeText">Crusier Bike</h2>
+          </div>
+        </div>
+      </div>
+      <!--! ========================================================= BIKE ENDS =====================================================  -->
+      <!--! ========================================================= SCOOTERS STARTS =====================================================  -->
+      <div id="ScooterSection" data-aos="fade">
+        <h1>Scooters</h1>
+        <div id="ScooterContainer">
+          <div class="Scooters" id="Scooter1" data-aos="fade-right">
+            <div class="ScooterImages" id="ScooterImg1"></div>
+            <h2 class="ScooterText">Scooters</h2>
+          </div>
+          <div class="Scooters" id="Scooter2" data-aos="fade-right">
+            <div class="ScooterImages" id="ScooterImg2"></div>
+            <h2 class="ScooterText">E - Scooter</h2>
+          </div>
+          <div class="Scooters" id="Scooter3" data-aos="fade-left">
+            <div class="ScooterImages" id="ScooterImg3"></div>
+            <h2 class="ScooterText">Maxi Scooter</h2>
+          </div>
+          <div class="Scooters" id="Scooter4" data-aos="fade-left">
+            <div class="ScooterImages" id="ScooterImg4"></div>
+            <h2 class="ScooterText">Moped</h2>
+          </div>
+        </div>
+      </div>
+      <!--! ========================================================= SCOOTERS ENDS =====================================================  -->
+      <!--! ========================================================= BRANDS STARTS =====================================================  -->
+      <div id="BrandSection">
+        <h1>Brands</h1>
+        <div id="BrandContainer">
+          <div class="Brands" id="Brand1" data-aos="zoom-out">
+            <div class="BrandsImages" id="BrandImg1"></div>
+          </div>
+          <div class="Brands" id="Brand2" data-aos="zoom-out">
+            <div class="BrandsImages" id="BrandImg2"></div>
+          </div>
+          <div class="Brands" id="Brand3" data-aos="zoom-out">
+            <div class="BrandsImages" id="BrandImg3"></div>
+          </div>
+          <div class="Brands" id="Brand4" data-aos="zoom-out">
+            <div class="BrandsImages" id="BrandImg4"></div>
+          </div>
+          <div class="Brands" id="Brand5" data-aos="zoom-out">
+            <div class="BrandsImages" id="BrandImg5"></div>
+          </div>
+        </div>
+      </div>
+      <!--! ========================================================= BRANDS ENDS =====================================================  -->
+
+      <!--! ================================================== RENT BY CATEGORIES STARTS ================================================  -->
+      <div id="RentByCategorySection">
+        <div id="RentBikeContainer">
+          <h1>Rent By Categories</h1>
+          <div id="RentBikesMain">
+            <div class="RentBikes" id="RentBike1" data-aos="zoom-in">
+              <div class="imges" id="img1"></div>
+              <div class="RentBikeName" id="Bike1">
+                <h3>Cruisers</h3>
+              </div>
+              <div class="RentButton" id="RentButton1">
+                <button>Enquire Now</button>
+              </div>
+            </div>
+            <div class="RentBikes" id="RentBike2" data-aos="zoom-in">
+              <div class="imges" id="img2"></div>
+              <div class="RentBikeName" id="Bike2">
+                <h3>Sportbikes</h3>
+              </div>
+              <div class="RentButton" id="RentButton2">
+                <button>Enquire Now</button>
+              </div>
+            </div>
+            <div class="RentBikes" id="RentBike3" data-aos="zoom-in">
+              <div class="imges" id="img3"></div>
+              <div class="RentBikeName" id="RentButton3">
+                <h3>Scooters</h3>
+              </div>
+              <div class="RentButton" id="Button3">
+                <button>Enquire Now</button>
+              </div>
+            </div>
+            <div class="RentBikes" id="RentBike4" data-aos="zoom-in">
+              <div class="imges" id="img4"></div>
+              <div class="RentBikeName" id="RentButton4">
+                <h3>Mopeds</h3>
+              </div>
+              <div class="RentButton" id="Button4">
+                <button>Enquire Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--! ===================================================== RENT BY CATEGORIES ENDS ==============================================  -->
+      <!--! ========================================================== WHY US START ====================================================  -->
+      <div id="WhyUsSection">
+        <h1>Why Us ?</h1>
+        <div id="WhyUsContainer">
+          <div id="WhyUsContainer1">
+            <div class="WhyUsContent" id="WhyUs1" data-aos="zoom-out">
+              <h1>Assured Bikes</h1>
+              <h2>
+                "Bikes that are assured with wheel-street will be of the highest
+                possible quality."
+              </h2>
+            </div>
+            <div class="WhyUsContent" id="WhyUs2" data-aos="zoom-out">
+              <h1>Lowest Price Gurantee</h1>
+              <h2>
+                "Get all your favourite bikes for rent at the lowest possible
+                price on the bike rental market."
+              </h2>
+            </div>
+            <div class="WhyUsContent" id="WhyUs3" data-aos="zoom-out">
+              <h1>One Stop Shop</h1>
+              <h2>
+                Be it everyday commute, road trips, riding gears, and
+                maintenance - we have them all!
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--! ========================================================== WHY US END ====================================================  -->
+      <!--! ========================================================== ABOUT US START =====================================================  -->
+      <div id="AboutSection">
+        <div id="About-Container">
+          <h1>About Us</h1>
+          <div id="AboutMain" data-aos="fade-up">
+            <div id="About-Img"></div>
+            <p>
+              We, Rider Bikes at Malad West in Mumbai, Maharashtra, are a
+              leading motorbike rental company that offers a diversified and
+              exceptional range of two wheeler on rent. Bike riders who have a
+              spirit governed by intense passion to ride different bikes have
+              just landed in the right place. we are regarded as one of the best
+              bike rental companies, due to our personalised service and higher
+              commitment levels. we have a huge store of exclusive bikes where
+              riders can choose to ride on daily basis.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--! ========================================================== ABOUT US ENDS =====================================================  -->
+      <!--! ========================================================== GALLERY START =====================================================  -->
+      <div id="GallerySection">
+        <div id="Gallery-Container" data-aos="zoom-in">
+          <h1>Gallery</h1>
+          <div id="GalleryMain">
+            <div class="imges" id="img1"></div>
+            <div class="imges" id="img2"></div>
+            <div class="imges" id="img3"></div>
+            <div class="imges" id="img4"></div>
+            <div class="imges" id="img5"></div>
+            <div class="imges" id="img6"></div>
+          </div>
+        </div>
+      </div>
+      <!--! ========================================================== GALLERY ENDS =====================================================  -->
+
+      <!--! ========================================================== VIDEOS STARTS =====================================================  -->
+      <div id="VideoSection">
+        <div id="Video-Container" data-aos="zoom-out">
+          <h1>Videos</h1>
+          <div id="VideoMain">
+            <div class="Videos" id="Video1">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/qM_Zm0uBlfk?si=351XQIUoE6ZMoOXb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="Videos" id="Video2">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/a_woE_7t_10?si=7Z_q69enIQP4zKwE"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="Videos" id="Video3">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/h_90aIGK-M8?si=SZIEd7majGywBgbq"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="Videos" id="Video4">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/h9-HUUNp2lI?si=E-jme78F-ZSUwZXI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--! ========================================================== VIDEOS ENDS =====================================================  -->
+      <!--! ========================================================== TESTIMONIALS STARTS =====================================================  -->
+      
+      <div id="TestimonialSection">
+        <h1>Testimonials</h1>
+        <div id="TestimonialMain">
+          <div id="TestimonialContainer">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./ASSETS/IMAGES/Testimonials/Person10.jpg" alt="">
+                  <p>This app is literally awesome and really helpful if anyone wants to check bike prices in their area or nearby showrooms prices in ex-showroon plus on road prices.Also,it has many features available like bike comparings which really helps to choice over different bikes and also about the bikes pros and cons.Also,the user interface is really simple and easy to use.Overall awesome app.</p>
+                  <h4>Aditi Singh
+                  </h4>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./ASSETS/IMAGES/Testimonials/Person2.jpg" alt="">
+                  <p>We have purchased our PUSLAR 125cc from this dealer. They available it to us at ( very good price).Very polite with customers having friendly behaviours and express all the qualtities of the product nicely. ??Thank you so much for this type of service sir.</p>
+                  <h4>Rajendra Prasad</h4>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./ASSETS/IMAGES/Testimonials/Person4.jpg" alt="">
+                  <p>Best place to purchase or sell second hand bikes and great service after sell and reasonable price overall very good service</p>
+                  <h4>James Richard</h4>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./ASSETS/IMAGES/Testimonials/Person6.jpg" alt="">
+                  <p>If you want to purchase honda 2wheelers then definitely choose Honda one of the best showroom in ranchi with good supporting staff</p>
+                  <h4>Ken willy</h4>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./ASSETS/IMAGES/Testimonials/Person7.jpg" alt="" srcset="">
+                  <p>Overall app is good and very helpful just one request please increase quality of 360° view. We are not able to see details so what is the purpose checking through 360° feature. Please add more detailed 360° view. Hope you see and reply to my comment</p>
+                  <h4>Trupti Gupta</h4>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./ASSETS/IMAGES/Testimonials/Person15.jpg" alt="">
+                  <p>This app really helpful for user who wants to check different products (Bikes & Scooter) available and its price range. Helpful for upcoming model as well.</p>
+                  <h4>Akash Vardhan</h4>
+
+                </div>
+                <div class="swiper-slide">
+                  <img src="./ASSETS/IMAGES/Testimonials/Person11.jpg" alt="">
+                  <p>👉 The best part of using this application is that it gives you freedom to choose the vehicle of your choice. When you scroll the booking page, you get to see many vehicles which you can rent without any hassle.</p>
+                  <h4>Kenna James</h4>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./ASSETS/IMAGES/Testimonials/Person12.jpg" alt="">
+                  <p>This app did an excellent job fixing the issue, addressing both the self-start problem by changing the battery and resolving some tuning issues. Now, the self-start is working fine, and the bike starts with a single kick, all within a remarkable five minutes. His great service left me genuinely impressed</p>
+                  <h4>Luios Luke</h4>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./ASSETS/IMAGES/Testimonials/Person14.jpg" alt="">
+                  <p>I hope you are all doing well. Today I'm bringing you the best bike and scooter rental app called Freedo Rentals. Freedo Rentals is the best bike and scooter rental app, which helps you rent a bike or scooter at the most affordable and reliable rates. Freedo Rentals is the best bike and scooter rental app that you can try on your realme smartphone....</p>
+                  <h4>Richa Shah</h4>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+      <!--! ========================================================== TESTIMONIAL ENDS =====================================================  -->
+      <!--! ========================================================== CONTACT US STARTS =====================================================  -->
+      <div id="ContactSection">
+        <div id="Contact-Container">
+          <h1>Contact Us</h1>
+          <div id="ContactMain">
+            <div class="Contacts" id="Contact1">
+              <i
+                id="icon-1"
+                class="fa fa-map-marker"
+                aria-hidden="true"
+                data-aos="zoom-in"
+              ></i>
+              <h2>Our Office Address</h2>
+              <h3>Malad West, Mumbai, Maharashtra 400064</h3>
+            </div>
+            <div class="Contacts" id="Contact2">
+              <i
+                id="icon-2"
+                class="fa fa-envelope"
+                aria-hidden="true"
+                data-aos="zoom-in"
+              ></i>
+              <h2>General Enquries</h2>
+              <h3>bikes424@gmail.com</h3>
+            </div>
+            <div class="Contacts" id="Contact3">
+              <i
+                id="icon-3"
+                class="fa fa-phone"
+                aria-hidden="true"
+                data-aos="zoom-in"
+              ></i>
+              <!-- <i id="icon-3" class="fa fa-mobile" aria-hidden="true"></i> -->
+              <h2>Call Us</h2>
+              <h3>8888 8484 7474</h3>
+            </div>
+            <div class="Contacts" id="Contact4">
+              <i id="icon-4"
+              class="fa-solid fa-clock" data-aos="zoom-in"
+              ></i>
+              <h2>Timings</h2>
+              <h3>9:30am Monday to Friday 5:35pm</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--! ========================================================== CONTACTS US ENDS =====================================================  -->
+      <!--! ========================================================== FOOTER START =====================================================  -->
+      <div id="FooterSection">
+        <div id="FooterContainer">
+          <div id="DevContact">
+            <div id="DevImg"></div>
+            <div id="SocialMedia">
+              <a href="https://www.facebook.com/profile.php?id=100034748585775"
+                ><i id="icon-1" class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/24amol/"
+                ><i id="icon-2" class="fa-brands fa-instagram"></i></a>
+              <a href=""
+                ><i id="icon-3" class="fa-brands fa-linkedin"></i></a>
+              <a href=""
+                ><i id="icon-4" class="fa-brands fa-github"></i></i
+              ></a>
+              <a href="https://amol24.netlify.app/"
+                ><i id="icon-5" class="fa-solid fa-globe"></i></a>
+            </div>
+          </div>
+          <h2>@ Devloped By Mr. Amol Pawar</h2>
+          <h1>
+            © Copyrights 2023 - 2024 Riders Bike Centre All Rights Reserved.
+          </h1>
+        </div>
+      </div>
+      <!--! ========================================================== FOOTER ENDS =====================================================  -->
+    </main>
+    <!--! ========================================================= MAIN ENDS ==========================================================  -->
+    <!--! ===================================================== TOP UP BUTTON ==========================================================  -->
+    <div id="TopUp">
+      <a href="#HomeSection"></a>
+    </div>
+    <!--! ===================================================== TOP UP BUTTON ==========================================================  -->
+
+    <!--* ================================================ JAVASCRIPT FILES =============================================================  -->
+    <!--! ================================================ NAVBAR ON SCROLL =============================================================  -->
+    <script src="./COMPONENTS/Bike.js"></script>
+    <!--! ================================================ NAVBAR ON SCROLL =============================================================  -->
+
+    <!--! ================================================ ANIMATION ON SCROLL START ========================================================  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2400,
+        once: true,
+      });
+    </script>
+    <!--! ================================================ ANIMATION ON SCROLL ENDS =========================================================  -->
+    <!--! ================================================ SWIPER JS STARTS =========================================================  -->
+    <script src="./COMPONENTS/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <!--! ================================================ SWIPER JS ENDS =========================================================  -->
+    
+    <!--* ================================================ JAVASCRIPT FILES =============================================================  -->
+  </body>
+</html>
